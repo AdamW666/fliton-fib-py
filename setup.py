@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'fib-number = fliton_fib_py.cmd.fib_numb:fib_numb',
+            'fib_number=fliton_fib_py.cmd.fib_numb:fib_numb',
         ]
     }
 )
