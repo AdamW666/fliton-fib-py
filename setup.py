@@ -1,12 +1,15 @@
 from setuptools import find_packages, setup
 
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
 setup(
     name="fliton_fib_py",
     version="0.0.1",
     author="Adam Wong",
     author_email="wizzardcloud@gmail.com",
     description="Calculate Fibonacci number series",
-    long_description="A basic library to calculate Fibonacci series",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/AdamW666/fliton-fib-py",
     install_requires=[],
