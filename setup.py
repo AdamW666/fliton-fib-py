@@ -16,7 +16,6 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/AdamW666/fliton-fib-py",
-    install_requires=[],
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 4 - Beta",
