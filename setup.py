@@ -25,5 +25,12 @@ setup(
         'console_scripts': [
             'fib_number=fliton_fib_py.cmd.fib_numb:fib_numb',
         ]
-    }
+    },
+    install_requires=[
+        "PyYAML>=4.1.2",
+        "dill>=0.2.8"
+    ],
+    extra_require={
+        "server": ["Flask>=1.0.0"]
+    },
 )

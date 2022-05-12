@@ -1,9 +1,6 @@
-from typing import Optional
-
-
-def recur_fib_num(number: int) -> Optional[int]:
+def recur_fib_num(number: int) -> int:
     if number < 0:
-        return None
+        raise ValueError("Fibonacci has to start from 1")
     elif number <= 1:
         return number
     else:

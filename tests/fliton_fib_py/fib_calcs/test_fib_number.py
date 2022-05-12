@@ -7,7 +7,10 @@ class RecurringFibNumbersTest(TestCase):
         self.assertEqual(0, recur_fib_num(number=0))
 
     def test_negative(self):
-        self.assertEqual(None, recur_fib_num(-1))
+        with self.assertRaises(ValueError) as raised_error:
+            recur_fib_num(-1)
+        self.assertEqual("Fibonacci has to start from 1",
+                         str(raised_error.exception))
 
     def test_one(self):
         self.assertEqual(1, recur_fib_num(1))
